@@ -19,7 +19,7 @@ export type CaseStudiesProps = SliceComponentProps<Content.CaseStudiesSlice>;
  */
 const CaseStudies = async ({
   slice,
-}: CaseStudiesProps): Promise<JSX.Element> => {
+}: CaseStudiesProps) => {
   const client = createClient();
 
   const items = slice.primary.case_studies ?? [];
