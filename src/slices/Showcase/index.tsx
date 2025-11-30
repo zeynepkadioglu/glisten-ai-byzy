@@ -2,8 +2,8 @@ import { FC } from "react";
 import { Content } from "@prismicio/client";
 import Bounded from "@/components/Bounded";
 
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
-import { PrismicRichText, SliceComponentProps, PrismicText } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
+import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import ButtonLink from "@/components/ButtonLink";
 import clsx from "clsx";
 import { PiArrowClockwise, PiGear } from "react-icons/pi";

@@ -2,7 +2,7 @@ import { FC } from "react";
 import ButtonLink from "@/components/ButtonLink";
 import { Content, isFilled } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
-import { PrismicRichText, SliceComponentProps, PrismicText } from "@prismicio/react";
+import { SliceComponentProps, PrismicText } from "@prismicio/react";
 import Bounded from "@/components/Bounded";
 import StarGrid from "@/components/StarGrid";
 
