@@ -8,14 +8,12 @@ import clsx from "clsx"
 
 import gsap from 'gsap'
 import { useGSAP } from "@gsap/react";
-import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
 import { FaDigitalOcean, FaCloudflare, FaNpm, FaGithub, FaFigma, FaFly } from "react-icons/fa6"
 
 
 
 export default function AnimatedContent({ slice }: { slice: Content.IntegrationsSlice }) {
     const container = useRef(null)
-    const prefersReducedMotion = usePrefersReducedMotion();
     gsap.registerPlugin(useGSAP)
 
     const icons = {
