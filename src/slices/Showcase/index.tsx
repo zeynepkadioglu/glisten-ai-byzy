@@ -7,6 +7,7 @@ import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import ButtonLink from "@/components/ButtonLink";
 import clsx from "clsx";
 import { PiArrowClockwise, PiGear } from "react-icons/pi";
+import AnimatedContent from "./AnimatedContent";
 
 
 const icons = {
@@ -30,6 +31,8 @@ const Showcase: FC<ShowcaseProps> = ({ slice }) => {
       className="relative"
     >
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
+
+      <AnimatedContent>
       <PrismicRichText field={slice.primary.heading}
         components={{
           heading2: ({ children }) => (
@@ -39,7 +42,7 @@ const Showcase: FC<ShowcaseProps> = ({ slice }) => {
           )
         }}
       />
-
+      </AnimatedContent>
 
       <div className="grid mt-16 items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12 gap-8 lg:gap-0">
         <div >
