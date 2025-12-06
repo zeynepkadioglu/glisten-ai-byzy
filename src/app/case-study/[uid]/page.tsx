@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { asImageSrc } from "@prismicio/client";
+import { asImageSrc, asText } from "@prismicio/client";
 import { SliceZone, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
@@ -8,7 +8,7 @@ import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import Bounded from "@/components/Bounded";
 import StarGrid from "@/components/StarGrid";
-import { asText } from "../../../../node_modules/@prismicio/client/dist/richtext";
+
 
 type Params = { uid: string };
 
