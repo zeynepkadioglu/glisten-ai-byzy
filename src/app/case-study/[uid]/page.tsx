@@ -8,6 +8,7 @@ import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import Bounded from "@/components/Bounded";
 import StarGrid from "@/components/StarGrid";
+import { asText } from "../../../../node_modules/@prismicio/client/dist/richtext";
 
 type Params = { uid: string };
 
@@ -48,7 +49,7 @@ export async function generateMetadata({
     const page = await client.getByUID("case_study", uid).catch(() => notFound());
 
     return {
-        title: page.data.meta_title,
+        title: `${page.data.meta_title || asText(page.data.company) + " Case Study"}`,
         description: page.data.meta_description,
         openGraph: {
             images: [{ url: asImageSrc(page.data.meta_image) ?? "" }],
